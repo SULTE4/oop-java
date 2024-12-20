@@ -3,8 +3,8 @@ public class Main {
         handling.Library library = new handling.Library();
 
 
-        library.addBook(new handling.Book("1984", "George Orwell", "12345"));
-        library.addBook(new handling.Book("The Great Gatsby", "F. Scott Fitzgerald", "67890"));
+        library.addBook(new handling.Book("1984", "George Orwell", "00001"));
+        library.addBook(new handling.Book("The Great Gatsby", "F. Scott Fitzgerald", "00002"));
 
 
         library.addUser(new handling.LibraryUser("Alice", "U001"));
@@ -12,13 +12,13 @@ public class Main {
 
 
         System.out.println("\n--- Borrowing Book ---");
-        library.borrowBook("12345", "U001");
+        library.borrowBook("00001", "U001");
         library.displayBooks();
         library.displayTransactions();
 
 
         System.out.println("\n--- Returning Book ---");
-        library.returnBook("12345");
+        library.returnBook("00001");
         library.displayBooks();
         library.displayTransactions();
     }
